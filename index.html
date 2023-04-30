@@ -90,7 +90,7 @@
 <body>
     <h1>WhyNotCurious is on a 10 min break. Be back soon ~</h1>
     <div class="container">
-        <h1 id="headline">Countdown to my birthday</h1>
+        <h1 id="headline">Countdown to my first stream</h1>
         <div id="countdown">
           <ul>
             <li><span id="days"></span>days</li>
@@ -122,12 +122,13 @@
             yyyy = today.getFullYear(),
             nextYear = yyyy + 1,
             dayMonth = "05/18/2023",
-            stream = dayMonth + yyyy;
+            stream = dayMonth;
         
         today = mm + "/" + dd + "/" + yyyy;
         if (today > stream) {
-          stream = dayMonth + nextYear;
+          stream = dayMonth;
         }
+        
         //end
         
         const countDown = new Date(stream).getTime(),
